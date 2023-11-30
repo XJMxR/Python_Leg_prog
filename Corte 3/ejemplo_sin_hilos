@@ -1,0 +1,32 @@
+package jvhilos;
+import java.util.*;
+
+public class hilosymatrices {
+	
+	static int [] [] matA = new int [4][4];
+	static int [] [] matB = new int [4][4];
+	static int [] [] matC = new int [4][4];
+	
+	
+	public static void main(String [] args) {
+		long startTime = System.currentTimeMillis();
+		
+		Random aleatorios = new Random();
+		  for (int fila = 0; fila <4; fila++)
+	        {
+			  matA[fila][0]  =1+ aleatorios.nextInt(101);
+			  matA[fila][1]  =1+ aleatorios.nextInt(101);
+			  matA[fila][2]  =1+ aleatorios.nextInt(101);
+			  matA[fila][3]  =1+ aleatorios.nextInt(101);
+
+			  System.out.print(matA[fila][0] + " ");
+			  System.out.print(matA[fila][1] + " ");
+			  System.out.print(matA[fila][2] + " ");
+			  System.out.print(matA[fila][3] + " ");
+			  System.out.print("\n");
+	        }
+		  
+		  long endTime = System.currentTimeMillis() - startTime;
+		 System.out.print("tiempo "+endTime + " milisegundos");
+    }
+}
