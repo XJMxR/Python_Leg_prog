@@ -3,11 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lenguajes de programacion </title>
+    <title>Lenguajes de pr  ogramacion </title>
 </head>
 <body>
 
     <h1>Mis Carpetas</h1>
+
+    <div class="button-container">
+        <button class="button">Botón 1</button>
+        <button class="button">Botón 2</button>
+        <button class="button">Botón 3</button>
+    </div>
 
     <ul>
         <!-- Enlace a la primera carpeta -->
@@ -19,6 +25,61 @@
         <!-- Enlace a la tercera carpeta -->
         <li><a href="https://github.com/XJMxR/Python_Leg_prog/tree/7ad0c1035bb30e561457beb2c9a90d061edea6b9/Corte%203">Carpeta 3</a></li>
     </ul>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh; /* Ajusta la altura al 100% del viewport */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)), url('fondo.jpg'); /* Cambia 'tu-imagen.jpg' por la ruta de tu imagen */
+            background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+            background-position: center; /* Centra la imagen */
+            color: white; /* Color del texto */
+            font-family: Arial, sans-serif; /* Fuente del texto */
+            text-align: center; /* Alineación del texto */
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #282c34; /* Fondo negro */
+            color: white; /* Texto blanco */
+            font-family: Arial, sans-serif;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            max-width: 400px; /* Ancho máximo de la container para evitar que se extienda demasiado */
+        }
+
+        .button {
+            background-color: black; /* Fondo negro del botón */
+            color: white; /* Texto blanco del botón */
+            border: none;
+            padding: 15px 20px; /* Ajusta el espacio interno del botón */
+            margin: 10px;
+            border-radius: 10px; /* Borde redondeado */
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+    </style>
 
 </body>
 </html>
